@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricision</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/Submark 1.png">
+  <link rel="stylesheet" href="css/homepage/navbar.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-color fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="homepage.html">
+        <img src="images/Secondary 1.png" alt="Logo" style="height: 40px; width: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item"><a class="nav-link-grow" href="homepage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link-grow active" href="add.html">Add Costing</a></li>
+          <li class="nav-item"><a class="nav-link-grow" href="edit.html">Edit Calculation</a></li>
+          <li class="nav-item"><a class="nav-link-grow" href="manage.html">Manage Cost</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container py-5">
+    <h2 class="mb-4">Add New Ingredients</h2>
+    <form id="addForm" class="row g-3 form">
+      <div class="col-md-6">
+          <label for="productName" class="form-label">Product Name</label>
+          <input type="text" id="productName" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label for="ingredientName" class="form-label">Ingredient Name</label>
+        <input type="text" id="ingredientName" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label for="Supplier" class="form-label">Supplier</label>
+        <input type="text" id="Supplier" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label for="sheppingFee" class="form-label">Shipping Fee(₱)</label>
+        <input type="number" id="sheppingFee" class="form-control" required>
+    </div>
+      <div class="col-md-6">
+          <label for="pruchasePrice" class="form-label">Purchase Price(₱)</label>
+          <input type="number" id="purchasePrice" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+        <label for="qtyPerPack" class="form-label">Quantity per Pack</label>
+        <input type="number" id="qtyPerPack" class="form-control" required>
+    </div>
+    <div class="col-12">
+      <label for="units" class="form-label">Units</label>
+      <select id="units" class="form-control" required>
+        <option value="gram">Grams (g)</option>
+        <option value="kilogram">Kilgorams (kg)</option>
+        <option value="ounce">ounces (oz)</option>
+        <option value="pound">pounds(lbs)</option>
+        <option value="milliliter">milliliters (ml)</option>
+        <option value="liter">liters (l)</option>
+        <option value="teaspoon">teaspoons (tsp)</option>
+        <option value="tablespoon">tablespoons (tbsp)</option>
+        <option value="piece">pieces</option>
+        <option value="unit">units</option>
+        <option value="head">heads</option>
+        <option value="slice">slices</option>
+        <option value="pack">packs</option>
+        <option value="bag">bags</option>
+        <option value="box">boxes</option>
+        <option value="centimeter">centimeters (cm)</option>
+        <option value="inch">inches (in)</option>
+      </select>
+  </div>
+    <div class="col-12">
+        <label for="productDesc" class="form-label">Description</label>
+        <textarea id="productDesc" class="form-control" rows="3"></textarea>
+    </div>
+    <div class="col-12">
+
+      <button type="submit" class="btn btn-primary">Add Product</button>
+      <a href="manage.html" class="btn btn-outline-secondary">View List</a>
+      </div>
+    </form>
+    <div id="alertBox" class="alert d-none mt-3" role="alert"></div>
+</div>
+<!-- this is for the packaging -->
+<div class="container py-5 packaging">
+  <h2 class="mb-4">packaging cost</h2>
+  <form id="addForm" class="row g-3">
+      <div class="col-md-6">
+          <label for="productName" class="form-label">Product Name</label>
+          <input type="text" id="productName" class="form-control" required>
+      </div>
+      <div class="col-md-6">
+          <label for="productPrice" class="form-label">Price (₱)</label>
+          <input type="number" id="productPrice" class="form-control" required>
+      </div>
+      <div class="col-12">
+          <label for="productDesc" class="form-label">Description</label>
+          <textarea id="productDesc" class="form-control" rows="3"></textarea>
+      </div>
+      <div class="col-12">
+
+      <button type="submit" class="btn btn-primary">Add Product</button>
+      <a href="manage.html" class="btn btn-outline-secondary">View List</a>
+      </div>
+  </form>
+  <div id="alertBox" class="alert d-none mt-3" role="alert"></div>
+</div>
+  <footer>
+    <p>© 2025 Pricision. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+
+
+
+
+
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll('.nav-link-grow');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                // Prevent the default link behavior if you're using JavaScript to handle routing
+                // event.preventDefault(); 
+                
+                navLinks.forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                this.classList.add('active');
+            });
+        });
+    });
+</script>
+</body>
+</html>

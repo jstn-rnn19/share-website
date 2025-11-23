@@ -1,0 +1,47 @@
+.py-5 {
+  padding-top:  8rem !important;
+}
+.packaging {
+  padding-top: 1rem !important;
+}
+body {
+  background-color: rgba(253, 245, 230, 0.4) !important;
+  font-family: poppins ;
+}
+a {
+  font-weight: 500;
+}
+
+option {
+  color: #F0A500;
+  font-weight: 400;
+  background-color: #FDF5E6;
+}
+
+
+
+
+@media (min-width: 2560px) { /* xl and up */
+  .navbar-brand {
+    margin-right: 100px;
+  }
+  .form-label {
+    font-size: 1.8rem;
+  }
+  .form-control {
+    font-size: 1.8rem;
+  }
+  .packaging {
+    padding-top: 1rem !important;
+  }
+  #units option {
+    font-size: 1rem;
+  }
+  a {
+    font-size: 2rem !important; /* bigger than fs-1 */
+  }
+  .nav-item {
+    padding-left:10px !important;
+    padding-right:10px !important;
+  }
+}
